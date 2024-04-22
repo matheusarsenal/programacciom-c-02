@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+
+int contarLetras(char nome[]) {
+    int tamanho = 0;
+    while (nome[tamanho] != '\0') {
+        tamanho++;
+    }
+    return tamanho;
+}
+
+int main() {
+    char nome[50];
+    printf("Digite um nome: ");
+    scanf("%s", nome);
+    
+    int numLetras = contarLetras(nome);
+    printf("%s possui %d letras.\n", nome, numLetras);
+    
+    return 0;
+}
